@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.card {
+  position: relative;
+  width: 500px;
+  overflow: hidden;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 60px 20px 20px;
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.4s;
+
+  background: linear-gradient(
+    transparent,
+    rgba(0,0,0,0.8)
+  );
+}
+
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="harry-potter.jpg">
+
+<div class="info">
+<b>Harry Potter</b><br>
+The famous wizard and main character.
+</div>
+
+</div>
+
+</body>
+</html>
